@@ -193,12 +193,23 @@ td .nt{font-size:12px;color:var(--sub);margin-top:6px;line-height:1.5} td .nt b{
  .sm{font-size:13px} .note{padding:14px 16px;font-size:13px} svg[aria-label^="Cumulative"]{min-height:180px}
 }
 @media(max-width:400px){h1{font-size:32px} .hero img{width:130px;height:130px} .kpi .v{font-size:34px}}
-</style></head><body>
+</style><style>
+.pnav{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 0}
+.pnav a{font:700 11px/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+ padding:10px 14px;border:1px solid var(--line);border-radius:999px;color:var(--sub);background:#fff}
+.pnav a.on{background:var(--red);border-color:var(--red);color:#fff}
+table.cat td .nt{margin-top:6px}
+.lanejump{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.lanejump a{font-size:13px}
+@media(max-width:640px){.pnav{justify-content:center}}
+</style>
+</head><body>
 <header class=hdr><div class="wrap top">
 <div><div class=wm>KEYMAN</div><div class=wm-sub>Publishing Administration</div></div>
 <div class=hdr-r>Rights Gap Analysis<br><span class=badge>Draft &middot; 2026-09-13 &middot; rev 5</span></div>
 </div></header>
 <main class=wrap>
+<nav class=pnav aria-label="Report pages"><a href="./" class=on>Gap analysis</a><a href="catalog.html">Registration catalog</a></nav>
 <section class=panel style="display:block">
 <div class=hero>
 <img src="hero.jpg" alt="Ace Volar — Instagram profile photo (@acevolar)">
